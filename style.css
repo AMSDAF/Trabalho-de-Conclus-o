@@ -1,15 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root {
-    --azul: 081534;
-}
-
-.inter-tight {
-  font-family: "Inter Tight", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-}
+/* RESET */
 
 * {
     padding: 0;
@@ -19,10 +10,15 @@
     border: 0
 }
 
+/* STYLE GERAL */
+
 body {
+    font-family: "Inter Tight", sans-serif;
+    color: white;
     background-color: #000000;
-    overflow: hidden;
 }
+
+/* STYLE NAV BAR */
 
 .logo {
     font-size: 2rem;
@@ -34,6 +30,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: #000000;
+    border-bottom: 2px solid white;
     padding: 1rem;
 }
 
@@ -57,6 +54,8 @@ body {
     border-color: #323232;
 }
 
+/* STYLE HOME */
+
 .home-content {
     width: 100%;
     height: 80vh;
@@ -69,17 +68,51 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: 2px solid white;
 }
 
-.page-tittle {
+.home-title {
     font-size: 5rem;
-    font-family: "Inter Tight", sans-serif;
     color: white;
 }
 
-.home-content p {
+.home-text {
     color: white;
-    font-family: "Inter Tight", sans-serif;
-    max-width: 60vw;
+    max-width: 50vw;
     text-align: justify;
+}
+
+/* STYLE SOBRE MIM */
+
+.sobreMim-container {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sobreMim-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70vw;
+    gap: 1rem;
+}
+
+.sobreMim-title {
+    font-size: 2.5rem;
+}
+
+.sobreMim-text {
+    max-width: 55vw;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sobreMim-image {
+    background-color: rgb(8, 7, 75);
+    border-radius: 2rem 0rem;
+    width: 30vw;
+    height: 60vh;
 }
