@@ -15,3 +15,14 @@ projetosButton.addEventListener('click', () => {
     projetosContent.classList.toggle('active');
     projetosSeta.classList.toggle('active')
 })
+
+const hamburger = document.querySelector('.hamburger')
+const navLinks = document.querySelector('.nav-links')
+const navBackground = document.querySelector('.nav-background')
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    navBackground.classList.toggle('open');
+    document.body.classList.toggle('no-scroll');
+})

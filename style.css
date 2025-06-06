@@ -25,6 +25,7 @@ body {
 /* STYLE NAV BAR */
 
 .logo {
+    z-index: 2;
     font-size: 2rem;
     text-decoration: none;
 }
@@ -56,6 +57,30 @@ body {
 .nav-links a:hover {
     background-color: #000000;
     border-color: #323232;
+}
+
+.hamburger {
+    display: none;
+    z-index: 12;
+}
+
+.nav-background {
+    position: fixed;
+    top: -40vh;
+    left: 100vw;
+    width: 100px;
+    height: 100px;
+    background-color: #323232;
+    border-radius: 50%;
+    transform: scale(0);
+    z-index: -1;
+    transition: transform 0.6s ease;
+    pointer-events: none;
+}
+
+.nav-background.open {
+    transform: scale(20);
+    z-index: 1;
 }
 
 /* STYLE HOME */
@@ -195,11 +220,18 @@ body {
     opacity: 0;
     max-height: 0;
     overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     transition: opacity 0.3s ease, max-height 0.3s ease;
     display: flex;
     justify-content: space-between;
     border-top: 2px solid white;
     width: 100%;
+}
+
+.ferramentas-content::-webkit-scrollbar {
+  display: none;
 }
 
 .ferramentas-content.active {
@@ -442,4 +474,159 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media (max-width: 758px) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    body.no-scroll {
+    overflow: hidden;
+    }
+    
+    /*MOBILE STYLE NAV BAR*/
+
+    .nav-links {
+        overflow-y: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 1;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.6s ease;
+
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        width: 2rem;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        gap: 0.4rem;
+        cursor: pointer;
+    }
+
+    .hamburger span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: white;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+        border-radius: 0;
+        border-bottom: 1px solid white;
+        background-color: #323232;
+    }
+    /*MOBILE STYLE HOME*/
+
+    .home-content {
+        gap: 16rem;
+    }
+
+    .home-title {
+        font-size: 2rem;
+    }
+
+    .home-text {
+        max-width: 80vw;
+    }
+
+    /*MOBILE STYLE SOBRE MIM*/
+
+    .sobreMim-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobreMim-content {
+        width: 90vw;
+    }
+
+    .sobreMim-title {
+        font-size: 2rem;
+    }
+
+    .sobreMim-text {
+        min-width: 80vw;
+        margin-bottom: 1rem;
+    }
+
+    .sobreMim-image {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    /*MOBILE STYLE FERRAMENTAS*/
+
+    .ferramentas-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /*MOBILE STYLE EXPERIÊNCIAS*/
+    .experiencia-title {
+        font-size: 2rem;
+    }
+
+    /*MOBILE STYLE PROJETOS*/
+
+    .ficha-projeto li {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    /*MOBILE STYLE CONTATO*/
+
+    .contato-content {
+        flex-direction: column;
+    }
+
+    .contato-title {
+        font-size: 1.5rem;
+    }
+
+    /*MOBILE STYLE RODAPÉ*/
+
+    .rodape-container a {
+        font-size: 1.5rem;
+    }
+
+    .rodape-container p {
+        font-size: 0.6rem;
+    }
 }
