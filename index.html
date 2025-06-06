@@ -10,16 +10,16 @@
 
 <body>
     <nav class="nav-bar">
-        <a class="logo" href="/">☁️</a>
+        <a class="logo" href="#home-anchor">☁️</a>
         <ul class="nav-links">
             <li><a href="#sobreMim-anchor">Sobre Mim</a></li>
-            <li><a href="#">Experiências</a></li>
+            <li><a href="#experiencia-anchor">Experiências</a></li>
             <li><a href="#">Contato</a></li>
         </ul>
     </nav>
     <main>
         <div class="home-content">
-            <h1 class="home-title">Meu Portfólio</h1>
+            <h1 id="home-anchor" class="home-title">Meu Portfólio</h1>
             <p class="home-text">Este site foi desenvolvido com o objetivo de apresentar meus conhecimentos e projetos
                 na área de desenvolvimento. Aqui você encontrará informações sobre minha formação, experiências,
                 habilidades técnicas e exemplos de trabalhos realizados.</p>
@@ -28,7 +28,7 @@
             <div class="sobreMim-content">
                 <h1 class="sobreMim-title">SOBRE MIM</h1>
                 <div class="sobreMim-text">
-                    <p> Me chamo [Seu Nome] e estou concluindo o curso tecnológico de Análise e Desenvolvimento de
+                    <p> Me chamo Antonio Marcos e estou concluindo o curso tecnológico de Análise e Desenvolvimento de
                         Sistemas, que finalizei em junho de 2025. Desde cedo tive interesse por programação: meu
                         primeiro contato foi aos 9 anos, quando tentei criar um jogo sozinho — o que não deu muito
                         certo, mas foi o início da minha paixão pela área.</p>
@@ -49,11 +49,129 @@
                         projetos que façam a diferença.</p>
                 </div>
             </div>
-            <div class="sobreMim-image">
+            <div class="sobreMim-image"></div>
+        </div>
+        <div class="experiencia-container">
+            <div class="experiencia-content">
+                <h1 id="experiencia-anchor" class="experiencia-title">EXPERIÊNCIAS</h1>
+                <p class="experiencia-text">Nesta seção, compartilho um pouco da minha trajetória como desenvolvedor.
+                    Apesar
+                    de estar no início da jornada, venho adquirindo experiência prática através dos estudos, projetos
+                    pessoais e do curso de Análise e Desenvolvimento de Sistemas, que concluo em junho de 2025. Aqui
+                    você
+                    vai encontrar as principais ferramentas que utilizo no dia a dia e alguns projetos que desenvolvi,
+                    onde
+                    pude aplicar na prática os conhecimentos em HTML, CSS, JavaScript, Python e LUA.</p>
+            </div>
+            <div class="ferramentas-container">
+                <section class="ferramentas-button">
+                    <h1>FERRAMENTAS</h1>
+                    <div class="seta-ferramentas"></div>
+                </section>
+                <section class="ferramentas-content">
+                    <div class="card">
+                        <h1 class="card-title">HTML</h1>
+                        <div class="image-container">
+                            <div id="html-logo" class="card-image" aria-label="Logo HTML"></div>
+                        </div>
+                        <div class="card-content">
+                            <p>Linguagem de marcação usada para estruturar o conteúdo das páginas. Uso o HTML para criar
+                                a base dos meus sites, organizando títulos, textos, imagens e links de forma clara e
+                                semântica.</p>
+                        </div>
+                    </div>
 
+                    <div class="card">
+                        <h1 class="card-title">CSS</h1>
+                        <div class="image-container">
+                            <div id="css-logo" class="card-image" aria-label="Logo CSS"></div>
+                        </div>
+                        <div class="card-content">
+                            <p>Ferramenta essencial para dar estilo e visual aos meus projetos. Com o CSS,
+                                deixo os sites mais bonitos, responsivos e organizados, controlando cores, fontes,
+                                espaçamentos e animações.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h1 class="card-title">JavaScript</h1>
+                        <div class="image-container">
+                            <div id="js-logo" class="card-image" aria-label="Logo JavaScript"></div>
+                        </div>
+                        <div class="card-content">
+                            <p>Linguagem que uso para adicionar interatividade aos meus sites. Com JS, posso criar
+                                menus, carrosséis, validações de formulário e outras funcionalidades que melhoram a
+                                experiência do usuário.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h1 class="card-title">Python</h1>
+                        <div class="image-container">
+                            <div id="python-logo" class="card-image" aria-label="Logo Python"></div>
+                        </div>
+                        <div class="card-content">
+                            <p>Linguagem de programação versátil que uso para aprender lógica, automações e
+                                desenvolvimento de scripts. É simples de entender e me ajuda a pensar melhor como
+                                programador.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h1 class="card-title">LUA</h1>
+                        <div class="image-container">
+                            <div id="lua-logo" class="card-image" aria-label="Logo LUA"></div>
+                        </div>
+                        <div class="card-content">
+                            <p>Linguagem de script leve, muito usada em jogos. Usei Lua no Roblox pra criar lógicas de
+                                jogo, sistemas e interações simples. Fácil de aprender e ótima pra quem curte
+                                desenvolvimento de jogos.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="projetos-container">
+                <section class="projetos-button">
+                    <h1>PROJETOS</h1>
+                    <div class="seta-projetos"></div>
+                </section>
+                <div class="projetos-content">
+                    <div class="projeto-info">
+                        <h3>PROJETO | YOKAMI RPG</h3>
+                        <ul class="ficha-projeto">
+                            <li>
+                                <p class="topics">Objetivo:</p>
+                                <p class="content">Desenvolver um site para apresentar e dar suporte ao RPG autoral
+                                    Yokami, com foco em ambientação, personagens e mecânicas básicas.</p>
+                            </li>
+                            <li>
+                                <p class="topics">Ferramentas Utilizadas:</p>
+                                <p class="content">HTML, CSS, JavaScript (com apoio de tutoriais e documentação oficial)</p>
+                            </li>
+                            <li>
+                                <p class="topics">Tempo de Produção:</p>
+                                <p class="content">Aproximadamente 3 semanas de trabalho individual</p>
+                            </li>
+                            <li>
+                                <p class="topics">Status do Projeto:</p>
+                                <p class="content">Incompleto – o RPG foi descontinuado, mas o site segue funcional e representa bem meu aprendizado.</p>
+                            </li>
+                        </ul>
+                        <a class="projeto-link" href="https://amsdaf.github.io/Site-YokamiRPG/index.html">Ver Projeto</a>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="contato-container">
+
+        </div>
     </main>
+    <footer class="rodape-container">
+        <a class="logo" href="#home-anchor">☁️</a>
+        <p>Powered by Antonio Marcos © Portifolio | Antonio 2025</p>
+    </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
