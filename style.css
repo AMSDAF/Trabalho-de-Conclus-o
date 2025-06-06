@@ -378,6 +378,58 @@ body {
     width: 100%;
     margin-block: 1rem;
     border-bottom: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato-title {
+    font-size: 2.5rem;
+}
+
+.contato-content {
+    display: flex;
+    padding-block: 1rem;
+    gap: 1rem;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contato-image {
+    width: 2rem;
+    height: 2rem;
+    background-size: contain;
+    background-position: center;
+}
+
+.contato a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contato a:hover {
+    text-decoration: underline;
+}
+
+#email-icon {
+    background-image: url(assets/email-icon.png);
+}
+
+#whatsapp-icon {
+    background-image: url(assets/whatsapp-icon.png);
+}
+
+#instagram-icon {
+    background-image: url(assets/instagram-icon.png);
+}
+
+#github-icon {
+    background-image: url(assets/github-icon.png);
 }
 
 /*STYLE RODAPÉ*/
